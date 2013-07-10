@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
     if(err) {
     	console.log(err);
     } else {
-    	response.send(html);
+    	response.send(html.toString());
     	console.log('Sending ' + name);
     }
   });
